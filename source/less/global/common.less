@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+  margin: 0;
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: @basic-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
