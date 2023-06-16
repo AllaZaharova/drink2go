@@ -102,7 +102,7 @@ export const sprite = () => {
 
 const copy = (done) => {
   gulp
-    .src(["source/fonts/*.{woff2,woff}", "source/*.ico", "source/manifest.webmanifest", "source/img/favicons/icon.svg"], {
+    .src(["source/fonts/*.{woff2,woff}"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
