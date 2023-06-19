@@ -1,0 +1,43 @@
+.slider {
+  background-color: @flat-white;
+  position: relative;
+}
+
+.slider__wrapper {
+  .wrapper();
+  min-height: 656px;
+}
+
+.slider__lists {
+  .list-reset();
+}
+
+.slider__button-group {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.slider__button {
+  width: 20px;
+  height: 656px;
+  color: #593cac;
+  background-color: #f3ebf3;
+  border: none;
+  cursor: pointer;
+
+  &--next {
+    background-image: url("../img/icons/arrow_next.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--prev {
+    background-image: url("../img/icons/arrow.prev.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,145 @@
+.filter__wrapper {
+  margin-bottom: 33px;
+}
+
+.filter__group-price {
+  margin-bottom: 30px;
+}
+
+.filter__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: @basic-black;
+}
+
+.filter__wrapper-number-fields {
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "\2014";
+    padding: 10px 0;
+    order: 2;
+  }
+}
+
+.filter__input-field {
+  width: 118px;
+  padding: 8px 10px;
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: @basic-grey;
+  background: @basic-white;
+  border: 2px solid @basic-primary;
+  border-radius: 4px;
+}
+
+.filter__group-inputs-min {
+  order: 1;
+  flex-grow: 0;
+}
+
+.filter__group-inputs-max {
+  order: 3;
+  flex-grow: 0;
+}
+
+.filter__radio-wrapper {
+  margin-bottom: 34px;
+}
+
+.filter__radio-lists {
+  .list-reset();
+}
+
+.filter__item {
+  margin-bottom: 20px;
+}
+
+.filter__item-label {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+
+  &--checkbox {
+    padding-left: 52px;
+  }
+}
+
+.filter__item-input {
+  display: block;
+}
+
+.filter__item-mark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  background-color: @basic-white;
+  border: 2px solid @basic-grey;
+
+  &--radio {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    width: 42px;
+    height: 24px;
+    border-radius: 12px;
+  }
+}
+
+.filter__item-input--radio[type="radio"]:checked + .filter__item-mark--radio::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: @basic-primary;
+  border-radius: 50%;
+  background-position: center;
+  border: 2px solid @basic-primary;
+  content: "";
+}
+
+.form__item-option {
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: @basic-black;
+
+
+  &--radio {
+    vertical-align: middle;
+    color: @basic-primary;
+  }
+}
+
+.filter__checkbox-lists {
+  .list-reset();
+}
+
+.filter__item-input--checkbox[type="checkbox"]:checked + .filter__item-mark--checkbox::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: @basic-grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}

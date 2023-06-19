@@ -1,0 +1,31 @@
+.range__scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 24px;
+  background-color: @light-grey;
+}
+
+.range__bar {
+  position: absolute;
+  background-color: @basic-primary;
+  height: 4px;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: @basic-white;
+  border: 2px solid @primary-lighter;
+  border-radius: 50%;
+
+  &--min {
+    top: -10px;
+    left: -10px;
+  }
+
+  &--max {
+    top: -10px;
+    right: -10px;
+  }
+}
