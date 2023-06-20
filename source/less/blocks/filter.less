@@ -125,8 +125,91 @@
     vertical-align: middle;
     color: @basic-primary;
   }
+
+  &--checkbox {
+    vertical-align: middle;
+    color: @basic-black;
+  }
+}
+
+.filter__checkbox-wrapper {
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .filter__checkbox-lists {
   .list-reset();
+}
+
+
+.filter__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.filter__button {
+  margin: 0;
+  padding: 8px 91px;
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+
+  &--apply {
+    color: @basic-white;
+    margin-bottom: 20px;
+  }
+
+  &--reset {
+    color: @basic-primary;
+    background-color: @basic-white;
+  }
+}
+
+.filter__sorting-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter__sorting-text {
+  margin: 0;
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: @basic-black;
+}
+
+.filter__sorting-select {
+  width: 165px;
+  margin: 0;
+  position: relative;
+  display: flex;
+}
+
+.filter__sorting-dropdown {
+  width: 100%;
+  padding-right: 30px;
+  font-family: @basic-fonts;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: @basic-primary;
+  border: none;
+  background-color: @lightest-grey;
+  background-image: url("../img/icons/arrowtodown.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  appearance: none;
 }

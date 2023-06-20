@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: @basic-white;
   box-sizing: border-box;
 }
@@ -11,6 +11,7 @@
   display: inline-block;
   padding-left: 20px;
   padding-top: 12px;
+  margin-right: 88px;
   height: 60px;
   text-decoration: none;
 }
@@ -35,12 +36,16 @@
   .main-header__logo {
     padding-left: 0;
     padding-top: 22px;
-    margin-right: 60px;
+    margin-right: 68px;
   }
 
   .main-header__logo-image {
     width: 82px;
     height: 36px;
+  }
+
+  .main-header__wrapper-user {
+    order: 3;
   }
 }
 

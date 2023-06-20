@@ -4,11 +4,17 @@
   min-height: 57px;
 }
 
+.main-nav__wrapper {
+  //.width: 320px;
+  display: flex;
+  flex-direction: row;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: -56px;
-  right: 0;
-  z-index: 2;
+  top: 0;
+  right: -55px;
+  z-index: 5;
   display: block;
   width: 60px;
   height: 60px;
@@ -20,19 +26,19 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 24px;
+  left: 20px;
   width: 16px;
   height: 1.5px;
   background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(#000000, 30%);
   box-shadow:
-    0 8px 0 0 fade(#000000, 30%),
-    0 16px 0 0 fade(#000000, 30%);
+    0 6px 0 0 fade(#000000, 30%),
+    0 12px 0 0 fade(#000000, 30%);
 }
 
 @media (max-width: @mobile-width-only) {
@@ -58,7 +64,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 70px;
+    left: 0;
     z-index: 10;
     min-height: 80vh;
     background-color: @basic-white;
@@ -81,8 +87,8 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
-  right: auto;
-  left: 0;
+  right: 0;
+  left: auto;
 
   &::before,
   &::after {
@@ -90,9 +96,9 @@
     position: absolute;
     top: 24px;
     left: 18px;
-    width: 36px;
+    width: 18px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: @basic-black;
   }
 
   &::before {
